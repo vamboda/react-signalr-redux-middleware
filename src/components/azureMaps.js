@@ -42,7 +42,8 @@ export class AzureMap extends Component {
 
     this.map = new AzureMaps.Map('map', {
       'subscription-key': azureMapsKey,
-      zoom: 11
+      zoom: 11,
+      center:  [ -122.3320708, 47.606 ]
     });
     console.log("map created!");
     //this.map.addIcon('bus-image', this.refs.testImage);
